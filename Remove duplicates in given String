@@ -1,0 +1,13 @@
+class Solution {
+    public String removeDuplicateLetters(String s) {
+        StringBuilder sb=new StringBuilder();
+        HashSet<Character> hs=new HashSet();
+        for(char c:s.toCharArray()){
+            hs.add(c);
+        }
+        for(char c:hs){
+            sb.append(c);
+        }
+        return sb.toString();
+    }
+}
