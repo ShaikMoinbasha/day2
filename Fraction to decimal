@@ -1,0 +1,10 @@
+class Solution {
+    public String fractionToDecimal(int numerator, int denominator) {
+        
+        double d = (double) numerator / denominator;
+        if(d==(int)d){
+                return String.valueOf((int)d);
+        }
+            return String.valueOf(d);   
+    }
+}
